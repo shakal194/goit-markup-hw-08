@@ -1,0 +1,39 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--bgc-black-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-addres {
+  margin-right: 70px;
+  /* flex-grow: 1; */
+}
+
+.footer-link {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white-color);
+}
+
+.footer-contact {
+  margin-right: 93px;
+}
+
+.footer-contact-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
