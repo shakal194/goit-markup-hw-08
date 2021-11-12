@@ -9,14 +9,11 @@
 
 .clients-items {
   display: flex;
-}
-
-.clients-item {
   margin-right: 30px;
-}
 
-.clients-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .clients-link {
@@ -32,21 +29,16 @@
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--blue-color);
-}
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blue-color);
+  }
 
-.clients-link .clients-icon {
-  fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--blue-color);
+  & .clients-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .clients-icon {
@@ -54,4 +46,9 @@
   height: 60px;
   fill: currentColor;
   color: var(--border-grey-color);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--blue-color);
+  }
 }

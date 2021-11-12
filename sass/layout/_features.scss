@@ -5,6 +5,10 @@
 
 .features-item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-icon-container {
@@ -20,10 +24,6 @@
 .features-icon {
   width: 70px;
   height: 70px;
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-item-title {

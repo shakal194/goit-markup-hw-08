@@ -9,10 +9,10 @@
 
 .social-item {
   margin-right: 10px;
-}
 
-.social-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-link {
@@ -26,16 +26,16 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+  }
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--blue-color);
-  color: var(--white-color);
 }

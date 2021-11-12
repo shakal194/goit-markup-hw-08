@@ -15,13 +15,13 @@
   color: var(--black-color);
 }
 
-.works-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .works-item {
   width: 100%;
   position: relative;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
 }
 
 .work-container-title {
