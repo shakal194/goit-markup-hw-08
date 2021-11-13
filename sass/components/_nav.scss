@@ -1,49 +1,42 @@
 .nav,
-.contact-list {
+.contact {
   display: flex;
   align-items: center;
 }
 
-.nav-list,
-.contact-list {
-  display: flex;
-}
-
-.logo-web {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--blue-color);
-}
-
-.logo-link {
+.logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
 
-.nav-logo-studio {
+.logo__web {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--blue-color);
+}
+
+.logo__web--black {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
 }
 
-.nav-item,
-.contact-item {
+.nav__item,
+.contact__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.nav-link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.nav-link {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -56,17 +49,15 @@
   }
 }
 
-.contact-list {
+.contact {
   margin-left: auto;
 }
 
-.contact-link {
+.contact__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.contact-link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -81,17 +72,17 @@
   }
 }
 
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact-icon.email {
+.contact__icon--email {
   width: 16px;
   height: 12px;
 }
 
-.contact-icon.phone {
+.contact__icon--phone {
   width: 10px;
   height: 16px;
 }
