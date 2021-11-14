@@ -1,13 +1,9 @@
-.social-container {
-  padding: 16px 32px 30px;
-}
-
-.social-items {
+.section-social-link {
   display: flex;
   justify-content: center;
 }
 
-.social-item {
+.social-link__item {
   margin-right: 10px;
 
   &:last-child {
@@ -15,7 +11,7 @@
   }
 }
 
-.social-link {
+.social-link__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +30,7 @@
   }
 }
 
-.social-icon {
+.social-link__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;

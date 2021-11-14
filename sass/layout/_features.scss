@@ -1,9 +1,9 @@
-.features-list {
+.section-features {
   display: flex;
   justify-content: center;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 
   &:not(:last-child) {
@@ -11,7 +11,7 @@
   }
 }
 
-.features-icon-container {
+.features__icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +21,12 @@
   margin-bottom: 30px;
 }
 
-.features-icon {
+.features__icon {
   width: 70px;
   height: 70px;
 }
 
-.features-item-title {
+.features__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -35,7 +35,7 @@
   color: var(--black-color);
 }
 
-.features-text {
+.features__text {
   line-height: 1.71;
   color: var(--grey-color);
 }

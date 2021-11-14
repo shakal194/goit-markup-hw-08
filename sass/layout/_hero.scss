@@ -9,7 +9,7 @@
   background-size: cover;
   background-color: var(--bgc-black-color);
 
-  & .container {
+  & .container-hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
   }
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-bottom: 30px;
   text-align: center;
@@ -29,7 +29,7 @@
   color: var(--white-color);
 }
 
-.hero-button {
+.hero__button {
   padding: 10px 32px;
   cursor: pointer;
   background-color: var(--blue-color);

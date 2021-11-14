@@ -1,6 +1,11 @@
 .footer {
   padding: 60px 0;
   background-color: var(--bgc-black-color);
+
+  // & .container {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
 }
 
 .footer .container {
@@ -12,23 +17,12 @@
   margin-right: 70px;
 }
 
-.footer-link {
+.logo-foter {
   margin-bottom: 20px;
-  display: block;
 }
 
-.footer-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
+.logo--white {
   color: var(--white-color);
-}
-
-.footer-logo-web {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--blue-color);
 }
 
 .footer-contact {

@@ -6,22 +6,20 @@
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
 
-.logo__web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--blue-color);
 }
 
-.logo__web--black {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.logo--black {
   color: var(--black-color);
 }
 
@@ -46,6 +44,26 @@
   &:hover,
   &:focus {
     color: var(--blue-color);
+  }
+}
+
+.nav__link--current {
+  position: relative;
+
+  color: var(--blue-color);
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
   }
 }
 
@@ -75,14 +93,4 @@
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contact__icon--email {
-  width: 16px;
-  height: 12px;
-}
-
-.contact__icon--phone {
-  width: 10px;
-  height: 16px;
 }

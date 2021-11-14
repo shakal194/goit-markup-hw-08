@@ -1,12 +1,12 @@
-.teams.section {
+.section-teams {
   background-color: var(--bgc-grey-color);
 }
 
-.teams-list {
+.section-teams {
   display: flex;
 }
 
-.teams-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -15,12 +15,12 @@
   color: var(--black-color);
 }
 
-.teams-container {
+.teams__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.teams-item {
+.teams__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,12 +31,12 @@
   }
 }
 
-.team-item-title,
+.team__title,
 .team-text {
   text-align: center;
 }
 
-.team-item-title {
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
