@@ -1,12 +1,9 @@
 .section-teams {
+  display: flex;
   background-color: var(--bgc-grey-color);
 }
 
-.section-teams {
-  display: flex;
-}
-
-.section__title {
+.section__teams-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;

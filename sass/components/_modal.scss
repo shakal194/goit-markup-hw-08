@@ -18,7 +18,7 @@
   }
 }
 
-.hero-button-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -35,15 +35,15 @@
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close {
+.modal__icon-close {
   width: 11px;
   height: 11px;
   fill: currentColor;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .hero-button-close:hover &,
-  .hero-button-close:focus & {
+  .modal__button-close:hover &,
+  .modal__button-close:focus & {
     color: var(--blue-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

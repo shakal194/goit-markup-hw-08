@@ -61,7 +61,7 @@
     <!-- features -->
     <section class="section">
       <div class="container">
-        <h2 class="section__title visibility-hidden">Особенности</h2>
+        <h2 class="section__features-title visibility-hidden">Особенности</h2>
         <ul class="features section-features">
           <li class="features__item">
             <div class="features__icon-container">
@@ -117,7 +117,7 @@
     <!-- our works -->
     <section class="section section-works">
       <div class="container">
-        <h2 class="section__title">Чем мы занимаемся</h2>
+        <h2 class="section__works-title">Чем мы занимаемся</h2>
         <ul class="works section-works">
           <li class="works__item">
             <img src="./images/box_1.jpg" width="370" alt="Верстка сайтов" />
@@ -149,7 +149,7 @@
     <!-- our teams -->
     <section class="section section-teams">
       <div class="container">
-        <h2 class="section__title">Наша команда</h2>
+        <h2 class="section__teams-title">Наша команда</h2>
         <ul class="teams section-teams">
           <li class="teams__item">
             <img src="./images/team_card_1.jpg" width="270" alt="Игорь Демьяненко" />
@@ -306,7 +306,7 @@
     <!-- Clients section -->
     <section class="section section-clients">
       <div class="container">
-        <h3 class="section__title">
+        <h3 class="section__clients-title">
           Постоянные клиенты
         </h3>
         <ul class="clients section-clients">
@@ -363,16 +363,16 @@
         <a href="./index.html" class="logo logo-foter">
           Web<span class="logo--white">Studio</span>
         </a>
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item"><a href="https://goo.gl/maps/L9UydQ4pUafG2E277" target="_blank"
-                class="address-text">г. Киев, пр-т Леси Украинки, 26</a>
+        <address class="address-container">
+          <ul class="address">
+            <li class="address__item"><a href="https://goo.gl/maps/L9UydQ4pUafG2E277" target="_blank"
+                class="address__text">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="address-item">
-              <a href="mailto:info@devstudio.com" class="address-contact">info@devstudio.com</a>
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__contact">info@devstudio.com</a>
             </li>
-            <li class="address-item">
-              <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
+            <li class="address__item">
+              <a href="tel:+380961111111" class="address__contact">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -383,28 +383,28 @@
         </h3>
         <ul class="social-link section-social-link">
           <li class="social-link__item">
-            <a href="" class="social-link__link social-link__link--foter">
+            <a href="" class="social-link__link social-link__link--footer">
               <svg class="footer-social-link__icon">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-link__item">
-            <a href="" class="social-link__link social-link__link--foter">
+            <a href="" class="social-link__link social-link__link--footer">
               <svg class="footer-social-link__icon">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-link__item">
-            <a href="" class="social-link__link social-link__link--foter">
+            <a href="" class="social-link__link social-link__link--footer">
               <svg class="footer-social-link__icon">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-link__item">
-            <a href="" class="social-link__link social-link__link--foter">
+            <a href="" class="social-link__link social-link__link--footer">
               <svg class="footer-social-link__icon">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
@@ -413,15 +413,15 @@
         </ul>
       </div>
       <form class="footer-subscribe">
-        <h3 class="footer-subscribe-title">
+        <h3 class="footer-subscribe__title">
           Подпишитесь на рассылку
         </h3>
-        <label class="footer-subscribe-label">
-          <input class="footer-subscribe-input" type="email" placeholder="E-mail">
+        <label class="footer-subscribe__label">
+          <input class="footer-subscribe__input" type="email" placeholder="E-mail">
         </label>
-        <button class="footer-subscribe-submit" type="submit">
+        <button class="footer-subscribe__submit" type="submit">
           Подписаться
-          <svg class="footer-subscribe-icon">
+          <svg class="footer-subscribe__icon">
             <use href="./images/symbol-defs.svg#icon-send-1"></use>
           </svg>
         </button>
@@ -432,49 +432,49 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <form class="form">
-        <span class="form-text">
+        <span class="form__text">
           Оставьте свои данные, мы вам перезвоним
         </span>
-        <label class="form-label">
+        <label class="form__label">
           Имя
           <span class="form-span">
-            <input class="form-input" type="text" name="user-name">
-            <svg class="icon-form name">
+            <input class="form__input" type="text" name="user-name">
+            <svg class="form__icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
+        <label class="form__label">
           Телефон
           <span class="form-span">
-            <input class="form-input" type="tel" name="user-tel">
-            <svg class="icon-form tel">
+            <input class="form__input" type="tel" name="user-tel">
+            <svg class="form__icon">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
+        <label class="form__label">
           Почта
           <span class="form-span">
-            <input class="form-input" type="email" name="user-email">
-            <svg class="icon-form email">
+            <input class="form__input" type="email" name="user-email">
+            <svg class="form__icon">
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
+        <label class="form__label">
           Комментарий
-          <textarea class="form-message" name="message" placeholder="Введите текст"></textarea>
+          <textarea class="form__message" name="message" placeholder="Введите текст"></textarea>
         </label>
-        <label class="form-accept-policy">
-          <input type="checkbox" class="checkbox visibility-hidden">
-          <span class="checkbox-custom"></span>
-          Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="form-link-accept">Условия договора</a></label>
-        <button class="modal-button-submit" type="submit">
+        <label class="form__accept-policy">
+          <input type="checkbox" class="form__checkbox visibility-hidden">
+          <span class="form__checkbox-custom"></span>
+          Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="form__link-accept">Условия договора</a></label>
+        <button class="modal__button-submit" type="submit">
           Отправить
         </button>
-        <button type="button" class="hero-button-close" data-modal-close>
-          <svg class="icon-close">
+        <button type="button" class="modal__button-close" data-modal-close>
+          <svg class="modal__icon-close">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>

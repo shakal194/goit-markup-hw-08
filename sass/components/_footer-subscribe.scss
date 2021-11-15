@@ -1,4 +1,4 @@
-.footer-subscribe-title {
+.footer-subscribe__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -9,11 +9,11 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-label {
+.footer-subscribe__label {
   margin-right: 12px;
 }
 
-.footer-subscribe-input {
+.footer-subscribe__input {
   width: 358px;
   height: 50px;
 
@@ -42,7 +42,7 @@
   }
 }
 
-.footer-subscribe-submit {
+.footer-subscribe__submit {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -69,7 +69,7 @@
   }
 }
 
-.footer-subscribe-icon {
+.footer-subscribe__icon {
   margin-left: 10px;
   top: 13px;
 

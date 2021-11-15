@@ -1,14 +1,14 @@
-.filter-list {
+.section-filter {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   cursor: pointer;
   font-weight: 500;
