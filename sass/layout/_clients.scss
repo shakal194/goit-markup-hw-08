@@ -37,11 +37,6 @@
   &:focus {
     border-color: var(--blue-color);
   }
-
-  & .clients__icon {
-    fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
 .clients__icon {
@@ -49,6 +44,8 @@
   height: 60px;
   fill: currentColor;
   color: var(--border-grey-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .clients__link:hover &,
   .clients__link:focus & {

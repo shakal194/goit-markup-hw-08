@@ -114,6 +114,21 @@
 .form__checkbox {
   cursor: pointer;
   background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus + .form__checkbox-custom {
+    border-color: var(--blue-color);
+  }
+
+  &:checked + .form__checkbox-custom {
+    border-color: var(--blue-color);
+    background-color: var(--blue-color);
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .form__checkbox-custom {
@@ -123,26 +138,7 @@
   height: 15px;
   border: 2px solid var(--black-color);
   border-radius: 2px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .form__checkbox:focus + & {
-    border-color: var(--blue-color);
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .form__checkbox:checked + & {
-    border-color: var(--blue-color);
-    background-color: var(--blue-color);
-    background-image: url(../images/check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  background-size: cover;
 }
 
 .form__link-accept {
