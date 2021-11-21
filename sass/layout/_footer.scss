@@ -4,12 +4,23 @@
 }
 
 .footer .container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-addres {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
 }
 
 .logo-foter {
@@ -21,7 +32,11 @@
 }
 
 .footer-contact {
-  margin-right: 93px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .footer-contact-title {

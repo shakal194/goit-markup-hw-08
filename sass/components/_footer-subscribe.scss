@@ -14,10 +14,12 @@
 }
 
 .footer-subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   padding-left: 16px;
+  margin-bottom: 20px;
+
   background-color: var(--bgc-black-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -39,6 +41,10 @@
     border-color: var(--blue-color);
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     color: var(--white-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 358px;
   }
 }
 

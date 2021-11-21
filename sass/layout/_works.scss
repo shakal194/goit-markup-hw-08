@@ -1,9 +1,10 @@
 .section-works {
+  display: none;
   padding-top: 0px;
-}
 
-.section-works {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .section__works-title {

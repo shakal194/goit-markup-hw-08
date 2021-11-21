@@ -19,9 +19,15 @@
 <body>
   <header class="page-header">
     <div class="container container-page-haeder">
+      <button class="mobile-menu__button is-open" type="button" data-menu>
+        <svg class="mobile-menu__icon" width="24px" height="16px" aria-label="Переключатель мобильного меню">
+          <use class="mobile-menu__icon--menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          <use class="mobile-menu__icon--close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <a href="./index.html" class="logo logo-header">Web<span class="logo--black">Studio</span></a>
-        <ul class="nav">
+        <ul class="nav mobile-menu">
           <li class="nav__item">
             <a href="./index.html" class="nav__link nav__link--current">Студия</a>
           </li>
@@ -33,16 +39,16 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact">
+      <ul class="contact mobile-menu">
         <li class="contact__item">
-          <a href="mailto:info@devstudio.com" class="contact__link">
+          <a href="mailto:info@devstudio.com" class="contact__link contact__link--email">
             <svg class="contact__icon" width="16px" height="12px">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li class="contact__item">
-          <a href="tel:+380961111111" class="contact__link">
+          <a href="tel:+380961111111" class="contact__link contact__link--phone">
             <svg class="contact__icon" width="10px" height="16px">
               <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
@@ -152,7 +158,7 @@
         <h2 class="section__teams-title">Наша команда</h2>
         <ul class="teams section-teams">
           <li class="teams__item">
-            <img src="./images/team_card_1.jpg" width="270" alt="Игорь Демьяненко" />
+            <img src="./images/team/team-1.jpg" width="270" alt="Игорь Демьяненко" />
             <div class="teams__container">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p lang="en" class="team-text">Product Designer</p>
@@ -189,7 +195,7 @@
             </div>
           </li>
           <li class="teams__item">
-            <img src="./images/team_card_2.jpg" width="270" alt="Ольга Репина" />
+            <img src="./images/team/team-2.jpg" width="270" alt="Ольга Репина" />
             <div class="teams__container">
               <h3 class="team__title">Ольга Репина</h3>
               <p lang="en" class="team-text">Frontend Developer</p>
@@ -226,7 +232,7 @@
             </div>
           </li>
           <li class="teams__item">
-            <img src="./images/team_card_3.jpg" width="270" alt="Николай Тарасов" />
+            <img src="./images/team/team-3.jpg" width="270" alt="Николай Тарасов" />
             <div class="teams__container">
               <h3 class="team__title">Николай Тарасов</h3>
               <p lang="en" class="team-text">Marketing</p>
@@ -264,7 +270,7 @@
           </li>
           </li>
           <li class="teams__item">
-            <img src="./images/team_card_4.jpg" width="270" alt="Михаил Ермаков" />
+            <img src="./images/team/team-4.jpg" width="270" alt="Михаил Ермаков" />
             <div class="teams__container">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p lang="en" class="team-text">UI Designer</p>
@@ -304,7 +310,7 @@
       </div>
     </section>
     <!-- Clients section -->
-    <section class="section section-clients">
+    <section class="section clients-section">
       <div class="container">
         <h3 class="section__clients-title">
           Постоянные клиенты
@@ -480,7 +486,9 @@
         </button>
       </form>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
