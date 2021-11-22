@@ -1,9 +1,10 @@
-.nav-container,
+.nav,
 .contact {
-  // @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
+
 .nav,
 .contact {
   margin: 0;
@@ -11,8 +12,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
-  align-items: center;
 }
 
 .logo {
@@ -31,9 +32,10 @@
 }
 
 .logo-header {
+  position: absolute;
+  top: 0;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 15px;
 
   @media screen and (min-width: 768px) {
     padding-top: 24px;
