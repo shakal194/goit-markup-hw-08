@@ -18,16 +18,37 @@
 
 <body>
   <header class="page-header">
-    <div class="container container-page-haeder">
-      <button class="mobile-menu__button is-open" type="button" data-menu>
-        <svg class="mobile-menu__icon" width="24px" height="16px" aria-label="Переключатель мобильного меню">
-          <use class="mobile-menu__icon--menu" href="./images/symbol-defs.svg#icon-menu"></use>
-          <use class="mobile-menu__icon--close" href="./images/symbol-defs.svg#icon-close"></use>
+    <button class="mobile-menu__button" type="button" data-mobile-menu-open>
+      <svg class="mobile-menu__icon--open" width="40px" height="40px">
+        <use href="./images/symbol-defs.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu-container is-open" id="mobile-menu-container" data-mobile-menu>
+      <button class="mobile-menu__button" type="button" data-mobile-menu-close>
+        <svg class="mobile-menu__icon--close" width="40px" height="40px">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      <nav class="nav">
+      <!-- <ul class="mobile-menu">
+        <li class="contact__item">
+          <a href="tel:+380961111111" class="contact__link contact__link--phone">
+            <svg class="contact__icon" width="10px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+        <li class="contact__item">
+          <a href="mailto:info@devstudio.com" class="contact__link contact__link--email">
+            <svg class="contact__icon" width="16px" height="12px">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+      </ul> -->
+    </div>
+    <div class="container container-page-haeder">
+      <nav class="nav-container">
         <a href="./index.html" class="logo logo-header">Web<span class="logo--black">Studio</span></a>
-        <ul class="nav mobile-menu">
+        <ul class="nav">
           <li class="nav__item">
             <a href="./index.html" class="nav__link nav__link--current">Студия</a>
           </li>
@@ -39,7 +60,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact mobile-menu">
+      <ul class="contact">
         <li class="contact__item">
           <a href="mailto:info@devstudio.com" class="contact__link contact__link--email">
             <svg class="contact__icon" width="16px" height="12px">
@@ -59,7 +80,7 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container container-hero">
+      <div class="container-hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </div>

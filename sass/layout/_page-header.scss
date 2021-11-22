@@ -1,9 +1,9 @@
 .page-header {
   border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: 1200px) {
-    & .container-page-haeder {
-      display: flex;
-    }
+  & .container-page-haeder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

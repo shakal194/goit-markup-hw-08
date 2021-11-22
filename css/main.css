@@ -126,6 +126,7 @@ img {
 .logo-header {
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -627,56 +628,63 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 1200px) {
-  .page-header .container-page-haeder {
-    display: flex;
-  }
+.page-header .container-page-haeder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 320px) {
-  .mobile-menu {
-    top: 0;
-    left: 0;
-    opacity: 1;
-  }
+.mobile-menu-container {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .mobile-menu__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
   position: absolute;
-  top: 22px;
-  right: 23px;
-  cursor: pointer;
-  background: transparent;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  line-height: 0;
   border: none;
+  background-color: transparent;
 }
 
-.mobile-menu__icon {
+.mobile-menu__icon--open {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu__icon:hover, .mobile-menu__icon:focus {
+.mobile-menu__button:hover .mobile-menu__icon--open,
+.mobile-menu__button:focus .mobile-menu__icon--open {
+  fill: var(--blue-color);
+}
+
+.mobile-menu-container.is-open .mobile-menu__icon--open {
+  visibility: hidden;
+}
+
+.mobile-menu__button:hover .mobile-menu__icon--close,
+.mobile-menu__button:focus .mobile-menu__icon--close {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu__button.is-open .mobile-menu__icon--menu {
+.mobile-menu-container .mobile-menu__icon--close {
   display: none;
-}
-
-.mobile-menu__button .mobile-menu__icon--close {
-  display: none;
-}
-
-.mobile-menu__button.is-open .mobile-menu__icon--close {
-  display: block;
 }
 
 .hero {
-  max-width: 500px;
   margin: 0 auto;
   padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
