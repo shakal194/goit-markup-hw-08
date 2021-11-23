@@ -1,16 +1,25 @@
 .page-header {
-  width: 100vw;
-  height: 60px;
-
   border-bottom: 1px solid #ececec;
+}
 
+.container-page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    height: 80px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 100vw;
   }
 }

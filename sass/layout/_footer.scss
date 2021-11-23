@@ -8,17 +8,20 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
 .footer-addres {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
@@ -35,6 +38,10 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }

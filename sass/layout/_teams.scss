@@ -4,11 +4,14 @@
   padding-top: 0px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -39,6 +42,10 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
     margin: 0 auto;
 
     &:not(:last-child) {

@@ -4,14 +4,16 @@
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
 
 .filter__item {
-  margin-right: 8px;
-  margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     &:not(:last-child) {

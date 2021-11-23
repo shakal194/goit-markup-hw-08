@@ -1,6 +1,12 @@
 .section-features {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
     justify-content: center;
   }
 }
@@ -9,14 +15,17 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 270px;
+    margin: auto;
 
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -30,6 +39,10 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }

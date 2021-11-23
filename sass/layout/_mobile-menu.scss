@@ -28,6 +28,10 @@
     visibility: visible;
     pointer-events: all;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu__button {

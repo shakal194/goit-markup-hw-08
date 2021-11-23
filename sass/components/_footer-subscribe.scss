@@ -1,3 +1,12 @@
+.footer-subscribe {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer-subscribe__title {
   font-size: 14px;
   font-weight: 700;
@@ -44,6 +53,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
 }
@@ -72,6 +85,12 @@
   &:focus {
     color: var(--white-color);
     background-color: var(--blue-color-hero-btn);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
   }
 }
 
