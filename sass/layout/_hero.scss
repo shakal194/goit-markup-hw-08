@@ -27,7 +27,7 @@
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
@@ -38,6 +38,7 @@
   color: var(--white-color);
 
   @media screen and (min-width: 1200px) {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
