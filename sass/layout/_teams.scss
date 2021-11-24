@@ -4,7 +4,7 @@
   padding-top: 0px;
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

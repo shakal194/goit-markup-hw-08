@@ -6,6 +6,7 @@
 // COMPONENTS
 @import "./components/section";
 @import "./components/container";
+@import "./components/mobile-menu";
 @import "./components/nav";
 @import "./components/backdrop";
 @import "./components/modal";
@@ -17,7 +18,6 @@
 
 // // LAYOUT
 @import "./layout/page-header";
-@import "./layout/mobile-menu";
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/teams";
