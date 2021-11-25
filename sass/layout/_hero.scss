@@ -10,12 +10,17 @@
   background-size: cover;
   background-color: var(--bgc-black-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1199px) {
     max-width: 1600px;
 
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_bgc.jpg);
+      url(../images/hero/hero-desktop.jpg);
   }
 
   & .container-hero {
