@@ -1134,6 +1134,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section-teams {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 
