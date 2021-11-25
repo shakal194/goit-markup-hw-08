@@ -509,9 +509,23 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contact__link--phone .contact__icon {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contact__link--email {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact__link--email .contact__icon {
+    width: 14px;
+    height: 10px;
   }
 }
 
@@ -1119,7 +1133,6 @@ img {
 
 .section-teams {
   background-color: var(--bgc-grey-color);
-  padding-top: 0px;
   text-align: center;
 }
 
@@ -1246,21 +1259,6 @@ img {
   color: var(--white-color);
 }
 
-.section__clients-title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--bgc-black-color);
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .section__clients-title {
-    font-size: 36px;
-  }
-}
-
 .section-clients {
   display: flex;
   flex-wrap: wrap;
@@ -1271,6 +1269,28 @@ img {
   .section-clients {
     flex-wrap: nowrap;
     margin: 0;
+  }
+}
+
+.section__clients-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--bgc-black-color);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__clients-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__clients-title {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 

@@ -238,9 +238,25 @@
   }
 }
 
+.contact__link--phone {
+  @media screen and (max-width: 1199px) {
+    & .contact__icon {
+      width: 10px;
+      height: 14px;
+    }
+  }
+}
+
 .contact__link--email {
   @media screen and (max-width: 767px) {
     font-size: 24px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    & .contact__icon {
+      width: 14px;
+      height: 10px;
+    }
   }
 }
 
