@@ -17,10 +17,6 @@
   color: var(--bgc-black-color);
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
-  }
-
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     margin-bottom: 50px;
@@ -31,14 +27,17 @@
   width: calc((100% - 2 * 30px) / 2);
   margin: 15px;
 
+  height: 92px;
+
   @media screen and (min-width: 768px) {
+    width: 226px;
+
     width: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 170px;
-    margin: 0;
+    margin: auto;
     margin-right: 30px;
 
     &:last-child {
@@ -48,6 +47,7 @@
 }
 
 .clients__link {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,19 +63,10 @@
   &:focus {
     border-color: var(--blue-color);
   }
-
-  @media screen and (min-width: 768px) {
-    width: 226px;
-    height: 92px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 }
 
 .clients__icon {
-  width: 100%;
+  width: 106px;
   height: 60px;
   fill: currentColor;
   color: var(--border-grey-color);
@@ -85,9 +76,5 @@
   .clients__link:hover &,
   .clients__link:focus & {
     fill: var(--blue-color);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 170px;
   }
 }

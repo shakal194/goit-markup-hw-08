@@ -35,10 +35,6 @@
 }
 
 .mobile-menu__button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-
   width: 40px;
   height: 40px;
 
@@ -163,6 +159,12 @@
   @media screen and (max-width: 479px) {
     font-size: 3vw;
   }
+}
+
+.mobile-menu__button--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .mobile-menu__icon--close {
