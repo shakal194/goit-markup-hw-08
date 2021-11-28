@@ -951,20 +951,20 @@ img {
   position: relative;
 }
 
-.page-header.container {
+.container-page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
-  .page-header.container {
+  .container-page-header {
     height: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header.container {
+  .container-page-header {
     height: 80px;
   }
 }
