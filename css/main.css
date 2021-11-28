@@ -565,22 +565,24 @@ img {
 @media screen and (min-width: 500px) {
   .modal {
     position: absolute;
-    top: 5vh;
-    left: 5vw;
+    top: 50%;
+    left: 50%;
     width: 450px;
     height: 581px;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .modal {
-    top: 25vh;
-    left: 25vw;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
+    left: 50%;
     min-width: 528px;
     min-height: 581px;
   }
