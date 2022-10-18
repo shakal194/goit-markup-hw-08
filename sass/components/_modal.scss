@@ -21,32 +21,34 @@
     top: 50%;
     left: 50%;
 
-    width: 450px;
-    height: 581px;
+    min-width: 450px;
+    min-height: 609px;
+
+    transform: translate(-50%, -50%);
   }
 
-  @media screen and (min-width: 700px) {
-    // top: 25vh;
-    // left: 25vw;
-  }
+  // @media screen and (min-width: 700px) {
+  //   // top: 25vh;
+  //   // left: 25vw;
+  // }
 
-  @media screen and (min-width: 900px) {
-    // top: 25vh;
-    // height: 50vw;
+  // @media screen and (min-width: 900px) {
+  //   // top: 25vh;
+  //   // height: 50vw;
 
-    // top: 50%;
-    // height: 50%;
+  //   // top: 50%;
+  //   // height: 50%;
 
-    max-width: 528px;
-    max-height: 581px;
-  }
+  //   max-width: 528px;
+  //   max-height: 581px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    top: 50%;
-    left: 50%;
-    min-width: 528px;
-    min-height: 581px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   top: 50%;
+  //   left: 50%;
+  //   min-width: 528px;
+  //   min-height: 581px;
+  // }
 }
 
 .modal__button-close {
